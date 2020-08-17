@@ -1,0 +1,124 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body,
+html {
+	box-sizing: border-box;
+}
+
+header,
+#submitButton,
+h1,
+footer {
+	font-family: 'Philosopher', sans-serif;
+}
+
+main {
+	font-family: 'Open Sans', sans-serif;
+}
+
+header {
+	display: flex;
+	justify-content: space-between;
+	padding: 20px;
+}
+
+.logo {
+	color: #444;
+} 
+
+main {
+	width: 96.5%;
+	height: 100vh;
+	padding: 20px;
+}
+
+.sectionOne {
+	height: 40vh;
+}
+
+.divForm {
+	display: none;
+	text-align: center;
+	height: 30vh;
+}
+
+div a {
+	text-decoration: none;
+	padding: 10px;
+	color: grey;
+	line-height: 40px;
+}
+
+div a:hover {
+	color: #0288D1;
+}
+
+#input {
+	padding: 5px 66px;
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+textarea {
+	margin-bottom: 10px;
+}
+
+#submitButton {
+	padding: 5px 10px;
+	margin-right: 235px;
+	letter-spacing: 1px;
+}
+
+#submitButton:hover {
+	background-color: #5489EF;
+	color: white;
+	font-weight: bold;
+	border: transparent;
+	padding: 5px 12px;
+}
+
+#sectionTwo {
+	display: flex;
+	flex-wrap: wrap;
+	height: 60vh;
+}
+
+.outputCards {
+	display: none;
+	flex-direction: column;
+	font-size: 1em;
+	text-align: justify;
+	margin-top: 50px;
+	height: 50vh;
+	width: 20%;
+	padding: 20px 10px 0 10px;
+	box-shadow: 0 0 20px 2px #5489EF;
+	overflow: auto;
+}
+/*
+.outputCards {
+	display: none;
+}
+*/
+#icon {
+	float: right;
+	position: relative;
+	top: 1px;
+	font-size: .5;
+}
+
+#icon:hover {
+	color: red;
+}
+
+
+/*CONTACT FILE STYLING*/
+
+.inputContact {
+	padding: 20px 66px;
+	background-color: #F5F8FA;
+	border: transparent;
+}
