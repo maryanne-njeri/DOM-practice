@@ -1,6 +1,6 @@
 let links = ['<a href="index.html">Home</a>', '<a href="contact.html">Contact</a>',
  '<a class="addForm">Add</a>'];
-let nav = document.getElementById('menuItems');
+nav = document.getElementById('menuItems');
 
 for (let i=0; i<links.length; i++ ) {
 	nav.innerHTML += links[i];
@@ -21,7 +21,8 @@ let selectObject = {
 	textField: document.getElementById('textField'),
 	card: document.getElementById('card'),
 	outputCards: document.getElementsByClassName('outputCards'),
-	icon: document.getElementById('icon')
+	icon: document.getElementById('icon'),
+	bars: document.getElementById('bars')
 }
 
 function newElements() {
@@ -32,15 +33,17 @@ function newElements() {
 	p.innerHTML = selectObject.textarea.value;
 	selectObject.textField.appendChild(p);
 	selectObject.card.style.display = 'block';
+	// selectObject.nav.style.display = 'block';
 }
 
 function remove(event) {
 	event.target.style.display = 'none';
+
 }
 
 selectObject.button.addEventListener('click', newElements);
+// selectObject.bars.addEventListener('click', newElements);
 selectObject.head.addEventListener('click', remove);
 selectObject.textField.addEventListener('click', remove);
-// selectObject.icon.addEventListener('click', remove);
 
 

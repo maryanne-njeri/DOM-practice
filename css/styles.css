@@ -29,6 +29,10 @@ header {
 	color: #444;
 } 
 
+#bars {
+	display: none;
+}
+
 main {
 	width: 96.5%;
 	height: 100vh;
@@ -114,11 +118,150 @@ textarea {
 	color: red;
 }
 
+@media screen and (max-width: 600px) {
+
+	header {
+		display: flex;
+		justify-content: space-between;
+		padding: 40px;
+	}
+
+	#menuItems{
+		display: none;
+	}
+
+	#bars {
+		display: block;
+		line-height: 45px;
+		color: #5489EF;
+	}
+
+	main {
+		width: 96.5%;
+		height: 100vh;
+		padding: 20px;
+	}
+
+	.sectionOne {
+			height: 40vh;
+		}
+
+	.divForm {
+		display: none;
+		text-align: center;
+		height: 30vh;
+	}
+
+
+	#input {
+		padding: 5px 66px;
+		margin-bottom: 20px;
+		text-align: center;
+	}
+
+	textarea {
+		margin-bottom: 10px;
+	}
+
+	#submitButton {
+		padding: 5px 10px;
+		margin-right: 235px;
+		letter-spacing: 1px;
+	}
+
+	#submitButton:hover {
+		background-color: #5489EF;
+		color: white;
+		font-weight: bold;
+		border: transparent;
+		padding: 5px 12px;
+	}
+
+	#sectionTwo {
+		display: flex;
+		flex-wrap: wrap;
+		height: 60vh;
+	}
+
+	.outputCards {
+		display: none;
+		flex-direction: row;
+		font-size: 1em;
+		text-align: justify;
+		margin-top: 50px;
+		height: 50vh;
+		width: 96.5%;
+		/*padding: 20px 10px 0 10px;*/
+		/*box-shadow: 0 0 20px 2px #5489EF;*/
+		overflow: auto;
+	}
+
+}
+
 
 /*CONTACT FILE STYLING*/
+
+.body {
+	padding: 0; 
+	margin: 0;
+}
+
+.contactHeading {
+	display: flex; 
+	justify-content: space-around;
+}
+
+.contactMain {
+	display: flex; 
+	justify-content: space-around; 
+	align-items: center;
+}
 
 .inputContact {
 	padding: 20px 66px;
 	background-color: #F5F8FA;
 	border: transparent;
+}
+
+.divs {
+	padding-top: 20px;
+}
+
+.submitBtn {
+	padding: 5px 12px;
+}
+
+@media screen and (max-width: 600px) {
+
+.body {
+	padding: 0; 
+	margin: 0;
+}
+
+.contactHeading {
+	display: flex; 
+	justify-content: space-around;
+	line-height: 100px;
+}
+
+.contactMain {
+	display: flex; 
+	justify-content: space-around; 
+	align-items: center;
+}
+
+.inputContact {
+	padding: 20px 66px;
+	background-color: #F5F8FA;
+	border: transparent;
+}
+
+.divs {
+	padding-top: 20px;
+}
+
+.submitBtn {
+	padding: 5px 12px;
+}
+
 }
